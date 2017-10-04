@@ -1,25 +1,46 @@
 .App {
-  text-align: center;
+}
+
+.App-header {
+  height: 40px;
+  padding: 20px;
+  display: flex;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  height: 40px;
+  display: inline-block;
+  align-self: center;
 }
 
 .App-title {
   font-size: 1.5em;
+  display: inline-block;
+  align-self: center;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.App-container {
+  display: flex;
+  background: blue;
+}
+
+/* Text to Speech Modal */
+.text-to-speech {
+  align-self: center; 
+  margin: auto;
+  background: pink;
+}
+
+.text-to-speech h2.headline {
+  display: block;
+}
+
+.text-to-speech input.main-input {
 }
 
 @keyframes App-logo-spin {
