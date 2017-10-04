@@ -1,21 +1,22 @@
 .App {
+  font-family: sans-serif;
+  height: 100vh;
 }
 
 .App-header {
-  height: 40px;
-  padding: 20px;
+  padding: 12px;
   display: flex;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40px;
+  height: 32px;
   display: inline-block;
   align-self: center;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: inline-block;
   align-self: center;
 }
@@ -26,21 +27,34 @@
 
 .App-container {
   display: flex;
-  background: blue;
+  height: 85%;
 }
 
 /* Text to Speech Modal */
 .text-to-speech {
   align-self: center; 
   margin: auto;
-  background: pink;
 }
 
 .text-to-speech h2.headline {
   display: block;
+  font-size: 2em;
 }
 
 .text-to-speech input.main-input {
+  display: block;
+  width: 95%;
+  height: 32px;
+  border-radius: 32px;
+  margin: 24px auto 0;
+}
+
+.text-to-speech input.main-input:focus {
+  border-radius: 0px;
+}
+
+.text-to-speech input.main-input::placeholder {
+  padding-left: 12px;
 }
 
 @keyframes App-logo-spin {

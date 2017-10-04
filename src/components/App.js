@@ -16,7 +16,7 @@ class App extends Component {
         <div className="App-container">
           <div className="text-to-speech">
             <h2 className="headline">Text to Speech, Just Start Typing!</h2>
-            <input className="main-input" />
+            <input className="main-input" placeholder="Start Typing" />
           </div>
         </div>
       </div>
