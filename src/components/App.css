@@ -45,6 +45,7 @@
   display: block;
   width: 95%;
   height: 32px;
+  padding-left: 12px;
   border-radius: 32px;
   margin: 24px auto 0;
 }
@@ -54,7 +55,6 @@
 }
 
 .text-to-speech input.main-input::placeholder {
-  padding-left: 12px;
 }
 
 @keyframes App-logo-spin {
