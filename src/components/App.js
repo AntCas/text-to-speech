@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 
 import logo from '../img/logo.svg';
@@ -12,7 +13,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentText: ''
+      currentText: '',
+      history:     []
     };
   }
 
@@ -28,7 +30,9 @@ class App extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault(); // prevent page reload
-    this.textToSpeech(this.state.currentText);
+    const currentText = this.state.currentText;
+    this.textToSpeech(currentText);
+    this.state.history.push(currentText);
     this.setState({ currentText: '' });
   };
 
@@ -39,6 +43,10 @@ class App extends Component {
   }
 
   render() {
+    const historyItems = _.map(this.state.history, (value, i) =>
+      <li key={ i }>{ `${value}` }</li>
+    );
+    
     return (
       <div className="App">
         <header className="App-header">
@@ -56,6 +64,11 @@ class App extends Component {
                 onChange={ this.handleChange }
                 autoFocus={ true } />
             </form>
+          </div>
+          <div className="history">
+            <ol>
+              { historyItems }
+            </ol>
           </div>
         </div>
       </div>
