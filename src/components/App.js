@@ -53,7 +53,8 @@ class App extends Component {
               <input className="main-input"
                 placeholder="Start Typing"
                 value={ this.state.currentText }
-                onChange={ this.handleChange } />
+                onChange={ this.handleChange }
+                autoFocus={ true } />
             </form>
           </div>
         </div>
