@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.App-header h1.App-title {
+  margin-left: 12px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 32px;

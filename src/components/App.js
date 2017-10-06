@@ -18,7 +18,6 @@ class App extends Component {
 
   handleChange = (event) => {
     const value = event.target.value;
-    console.log(value);
 
     if (value.includes(' ')) {
       this.handleSubmit(event);
@@ -37,7 +36,6 @@ class App extends Component {
   textToSpeech = (value) => {
     const utterThis = new SpeechSynthesisUtterance(value);
     synth.speak(utterThis);
-    console.log("talk about " + value);
   }
 
   render() {
