@@ -12,7 +12,7 @@ export default class Hotkeys extends Component {
     return (
       <div className="hotkeys">
         <ol className="history">
-          { /* historyItems */ }
+          { historyItems }
         </ol>
         <ol className="presets">
           { /* presetItems */ }

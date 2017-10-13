@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Header from './header';
 import TextInput from './text-input';
 import Hotkeys from './hotkeys';
 
