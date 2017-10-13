@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 
 import TextInput from './text-input';
-import ClickInput from './click-input';
+import Hotkeys from './hotkeys';
 
 import logo from '../img/logo.svg';
 
