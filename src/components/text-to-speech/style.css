@@ -1,0 +1,30 @@
+.text-to-speech {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
+.text-to-speech h2.headline {
+  display: block;
+  font-size: 2em;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.text-to-speech input.main-input {
+  display: block;
+  width: 34%;
+  height: 32px;
+  padding-left: 12px;
+  border-radius: 32px;
+  margin: 24px auto 0;
+}
+
+.text-to-speech input.main-input:focus {
+  border-radius: 0px;
+}
+
+.text-to-speech input.main-input::placeholder {
+}
+
