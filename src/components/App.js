@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { Component } from 'react';
 
 import TextInput from './text-input';
@@ -46,10 +45,6 @@ class App extends Component {
   }
 
   render() {
-    const historyItems = _.map(this.state.history, (value, i) =>
-      <li key={ i }>{ `${value}` }</li>
-    );
-    
     return (
       <div className="App">
 
@@ -63,21 +58,12 @@ class App extends Component {
           <div className="text-to-speech">
             <h2 className="headline">Text to Speech, Just Start Typing!</h2>
 
-            <form className="text-form"
-              onSubmit={ this.handleSubmit }>
-              <input className="main-input"
-                placeholder="Start Typing"
-                value={ this.state.currentText }
-                onChange={ this.handleChange }
-                autoFocus={ true } />
-            </form>
+            <TextInput
+              handleSubmit={ this.handleSubmit }
+              currentText={ this.state.currentText }
+              handleChange={ this.handleChange } />
 
-            <div className="history">
-              <ol>
-                { /* historyItems */ }
-              </ol>
-            </div>
-
+            <Hotkeys history={ this.state.history } />
           </div>
 
         </div>

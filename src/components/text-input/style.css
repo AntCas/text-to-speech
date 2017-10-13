@@ -1,0 +1,7 @@
+.text-form input.main-input:focus {
+  border-radius: 0px;
+}
+
+.text-form input.main-input::placeholder {
+}
+
